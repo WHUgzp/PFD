@@ -8,12 +8,15 @@ The countermeasure is implemented for the DES and AES block-ciphers on software,
 
 What is implemented
 
-    AES without countermeasure
-    DES without countermeasure
-    AES with Rivain-Prouff countermeasure
-    DES with Carlet et al. countermeasure, with the Parity-Split method for Sbox computation (requiring 10 non-linear multiplications), and the improved method from Roy-Vivek (requiring only 7 non-linear multiplications). The latter is used by default. Update: a further improved method from Coron-Roy-Vivek (CHES 2014) is also implemented (requiring only 4 non-linear multiplications).
-    AES with the new anti-DPA countermeasure based on table recomputation.
-    DES with the new anti-DPA countermeasure based on table recomputation.
+    Software implementation for any chosen order t:
+        AES without countermeasure
+        DES without countermeasure
+        AES with Rivain-Prouff countermeasure and Coron countermeasure
+        DES with Coron countermeasure, Carlet et al. countermeasure, with the Parity-Split method for Sbox computation (requiring 10 non-linear multiplications), and the improved method from Roy-Vivek (requiring only 7 non-linear multiplications). The latter is used by default. Update: a further improved method from Coron-Roy-Vivek (CHES 2014) is also implemented (requiring only 4 non-linear multiplications).
+        AES with PFD countermeasure.
+        DES with PFD countermeasure.
+    Hardware implementation for the third order:
+        AES with PFD countermeasure.
 
 Notes
 
